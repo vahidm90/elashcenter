@@ -1,19 +1,18 @@
 # Exclusive Folders #
 /languages/**
+/uploads/**
 
 # Folders #
 **/bin/**
-**/uploads/**
 
 # Compiled source #
+*.vmc.*
 *.vmcompiled.*
 *.mo
 
 # Binaries #
 *.jpg
-*.JPG
 *.png
-*.PNG
 *.ttf
 *.eot
 *.woff
@@ -21,6 +20,8 @@
 *.otf
 *.svg
 *.gif
+*.swf
+*.wav
 
 # Packages #
 *.tar

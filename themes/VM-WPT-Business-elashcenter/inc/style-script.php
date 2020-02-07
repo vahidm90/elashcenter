@@ -75,12 +75,12 @@ function vm_load_production_css_js() {
 	wp_enqueue_script( 'bootstrap-js', 'https://cdn.rtlcss.com/bootstrap/v4.2.1/js/bootstrap.min.js', $dep_js, null, true );
 	$dep_js []= 'bootstrap-js';
 
-	wp_enqueue_style( 'basic', "$path/css/basic.vmcompiled.min.css", $dep_css, '1.0' );
+	wp_enqueue_style( 'basic', "$path/css/basic.vmc.min.css", $dep_css, '1.0' );
 	$dep_css [] = 'basic';
 
 	if ( is_front_page() ) :
-		wp_enqueue_style( 'front-page', "$path/css/front-page.vmcompiled.min.css", $dep_css, '1.0' );
-		wp_enqueue_script( 'front-page-js', "$path/js/front-page.vmcompiled.min.js", $dep_js, '1.0' );
+		wp_enqueue_style( 'front-page', "$path/css/front-page.vmc.min.css", $dep_css, '1.0' );
+		wp_enqueue_script( 'front-page-js', "$path/js/front-page.vmc.min.js", $dep_js, '1.0' );
 	endif;
 
 
